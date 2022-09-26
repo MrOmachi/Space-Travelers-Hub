@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../resources/planet.png';
 
 const NavBar = () => (
-  <div>
+  <div className="navs">
     <div className="NavBar">
+      <img src={logo} alt="logo" />
       <h1> Space rockets</h1>
     </div>
     <div className="Links">
