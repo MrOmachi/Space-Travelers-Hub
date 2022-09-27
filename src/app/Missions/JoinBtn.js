@@ -17,13 +17,13 @@ const Join = (props) => {
 
   if (reserved) {
     return (
-      <button type="button" onClick={handleLeave}>
+      <button type="button" className="leave" onClick={handleLeave}>
         Leave Mission
       </button>
     );
   }
   return (
-    <button type="button" onClick={handleJoin}>
+    <button type="button" className="join" onClick={handleJoin}>
       Join Mission
     </button>
   );
