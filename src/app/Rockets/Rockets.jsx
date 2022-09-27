@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../../Redux/Rockets/rocketreducers';
+import { getRockets, reserveRocket } from '../../Redux/Rockets/rocketreducers';
 import './Rockets.css';
 
 const Rocket = (props) => {
+  const dispatch = useDispatch();
   const { rocket } = props;
   return (
     <div className="each">
@@ -19,17 +20,21 @@ const Rocket = (props) => {
           </span>
           {rocket.description}
         </p>
-        <button type="submit" className="rocketBtn">Reserve Rocket</button>
+        <button type="button" className="rocketBtn" onClick={() => dispatch(reserveRocket(rocket.rocket_id))}>Reserve Rocket</button>
       </div>
     </div>
   );
 };
+
 Rocket.propTypes = {
   rocket: PropTypes.shape({
+    rocket_id: PropTypes.string,
     rocket_name: PropTypes.string,
     description: PropTypes.string,
+    // reserved: PropTypes.bool,
     flickr_images: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  // id: PropTypes.number,
 };
 
 const Rockets = () => {
@@ -43,9 +48,11 @@ const Rockets = () => {
   return (
     <div className="Rocketslist">
       {rocketsData.map((rocketData) => (
-        <Rocket key={rocketData.id} rocket={rocketData} />
+        <Rocket key={rocketData.id} rocket={rocketData} id={rocketData.id} />
       ))}
     </div>
   );
 };
+
 export default Rockets;
+// export { resRockets };
