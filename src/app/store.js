@@ -1,8 +1,10 @@
-// import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import rocketReducer from '../Redux/Rockets/rocketreducers';
 // import counterReducer from '../features/counter/counterSlice';
 
-// export const store = configureStore({
-//   reducer: {
-//     counter: counterReducer,
-//   },
-// });
+// eslint-disable-next-line import/prefer-default-export
+export const store = configureStore({
+  reducer: {
+    rockets: rocketReducer,
+  },
+});
