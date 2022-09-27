@@ -1,0 +1,19 @@
+.each {
+  border: 1px solid rgb(234, 5, 5);
+  display: flex;
+}
+
+.pict {
+  width: 375px;
+}
+
+.infor {
+  border: 1px solid #000;
+}
+
+.reservRock {
+  background-color: aquamarine;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+}

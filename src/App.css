@@ -4,7 +4,6 @@
   align-items: center;
   width: 80%;
   margin: auto;
-
 }
 
 .NavBar {
@@ -13,7 +12,7 @@
 }
 
 .NavBar > img {
-  width: 50px;
+  width: 80px;
 }
 
 .Links {
