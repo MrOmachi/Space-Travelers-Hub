@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions, missionState } from '../../Redux/mission/missionSlice';
+import Join from './JoinBtn';
+import Membership from './Membership';
 
 function Missions() {
   const mission = useSelector(missionState);
@@ -27,8 +29,8 @@ function Missions() {
                 <tr key={mission.mission_id}>
                   <td>{mission.mission_name}</td>
                   <td>{mission.description}</td>
-                  <td><button type="button">Not a member</button></td>
-                  <td><button type="button">Join Mission</button></td>
+                  <td><Membership reserved={!!mission.reserved} /></td>
+                  <td><Join reserved={!!mission.reserved} id={mission.mission_id} /></td>
                 </tr>
               ))}
             </tbody>
