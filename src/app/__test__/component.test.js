@@ -38,15 +38,15 @@ describe("Mission components", () => {
   });
 });
 
-// describe("Testing the Profile component", () => {
-//   test("Check rendering of the Profile component", () => {
-//     const { getByText } = render(
-//       <Router>
-//         <Provider store={store}>
-//           <MyProfile />
-//         </Provider>
-//       </Router>
-//     );
-//     expect(getByText("Rockets")).toBeInTheDocument();
-//   });
-// });
+describe("Testing the Profile component", () => {
+  test("Check rendering of the Profile component", () => {
+    const { getByText } = render(
+      <Router>
+        <Provider store={store}>
+          <MyProfile />
+        </Provider>
+      </Router>
+    );
+    expect(getByText("Rockets")).toBeInTheDocument();
+  });
+});
