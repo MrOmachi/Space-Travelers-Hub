@@ -47,6 +47,6 @@ describe('Testing the Profile component', () => {
         </Provider>
       </Router>,
     );
-    expect(getByText('Rockets')).toBeInTheDocument();
+    expect(getByText('My Rockets')).toBeInTheDocument();
   });
 });
