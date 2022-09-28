@@ -23,20 +23,20 @@ describe("Rocket components", () => {
   });
 });
 
-// describe("Mission components", () => {
-//   it("Render component", () => {
-//     const treeMission = render(
-//       <React.StrictMode>
-//         <Provider store={store}>
-//           <Router>
-//             <Missions />
-//           </Router>
-//         </Provider>
-//       </React.StrictMode>,
-//     );
-//     expect(treeMission).toMatchSnapshot();
-//   });
-// });
+describe("Mission components", () => {
+  it("Render component", () => {
+    const treeMission = render(
+      <React.StrictMode>
+        <Provider store={store}>
+          <Router>
+            <Missions />
+          </Router>
+        </Provider>
+      </React.StrictMode>
+    );
+    expect(treeMission).toMatchSnapshot();
+  });
+});
 
 // describe("Testing the Profile component", () => {
 //   test("Check rendering of the Profile component", () => {
