@@ -1,7 +1,9 @@
 import { useSelector } from 'react-redux';
+import Table from 'react-bootstrap/Table';
 import { missionState } from '../../Redux/mission/missionSlice';
 import Join from './JoinBtn';
 import Membership from './Membership';
+import './mission.css';
 
 function Missions() {
   const mission = useSelector(missionState);
@@ -10,12 +12,12 @@ function Missions() {
     <div>
       {mission.length ? (
         <div>
-          <table>
+          <Table striped bordered hover size="sm" className="mt-4 mx-auto w-75">
             <thead>
               <tr>
-                <td>Mission</td>
-                <td>description</td>
-                <td>Status</td>
+                <th>Mission</th>
+                <th>Description</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
@@ -23,12 +25,12 @@ function Missions() {
                 <tr key={mission.mission_id}>
                   <td>{mission.mission_name}</td>
                   <td>{mission.description}</td>
-                  <td><Membership reserved={!!mission.reserved} /></td>
-                  <td><Join reserved={!!mission.reserved} id={mission.mission_id} /></td>
+                  <td className="align-middle col-2"><Membership reserved={!!mission.reserved} /></td>
+                  <td className="align-middle"><Join reserved={!!mission.reserved} id={mission.mission_id} /></td>
                 </tr>
               ))}
             </tbody>
-          </table>
+          </Table>
         </div>
       ) : null}
     </div>

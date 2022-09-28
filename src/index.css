@@ -1,4 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* body {
   margin: 0;
   font-family:
     -apple-system,
@@ -14,9 +21,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-code {
+/* code {
   font-family:
     source-code-pro,
     Menlo,
@@ -24,4 +31,4 @@ code {
     Consolas,
     'Courier New',
     monospace;
-}
+} */
