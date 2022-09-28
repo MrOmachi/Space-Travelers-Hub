@@ -1,0 +1,11 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.profile p {
+  border: 1px solid;
+}

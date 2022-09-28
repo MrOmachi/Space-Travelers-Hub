@@ -16,11 +16,11 @@ const Rocket = (props) => {
         <h2>{rocket.rocket_name}</h2>
         <p>
           <span className="reservRock">
-            Reserved
+          {rocket.reserved ? 'Reserved' : null }
           </span>
           {rocket.description}
         </p>
-        <button type="button" className="rocketBtn" onClick={() => dispatch(reserveRocket(rocket.rocket_id))}>Reserve Rocket</button>
+        {<button type="button" className="rocketBtn" onClick={() => dispatch(reserveRocket(rocket.rocket_id))}>{rocket.reserved ? 'Cancel reservation' : 'Reserve Rockets'}</button>}
       </div>
     </div>
   );
@@ -31,7 +31,7 @@ Rocket.propTypes = {
     rocket_id: PropTypes.string,
     rocket_name: PropTypes.string,
     description: PropTypes.string,
-    // reserved: PropTypes.bool,
+    reserved: PropTypes.bool,
     flickr_images: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   // id: PropTypes.number,

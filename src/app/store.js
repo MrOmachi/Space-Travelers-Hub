@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import rocketReducer from '../Redux/Rockets/rocketreducers';
-import missionsReducer from '../Redux/mission/missionSlice';
-// import counterReducer from '../features/counter/counterSlice';
+import missionsReducer, { fetchMissions } from '../Redux/mission/missionSlice';
 
 // eslint-disable-next-line import/prefer-default-export
 export const store = configureStore({
@@ -10,3 +9,5 @@ export const store = configureStore({
     missions: missionsReducer,
   },
 });
+
+store.dispatch(fetchMissions());

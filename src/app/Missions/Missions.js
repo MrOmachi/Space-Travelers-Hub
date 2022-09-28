@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions, missionState } from '../../Redux/mission/missionSlice';
+import { useSelector } from 'react-redux';
+import { missionState } from '../../Redux/mission/missionSlice';
 import Join from './JoinBtn';
 import Membership from './Membership';
 
 function Missions() {
   const mission = useSelector(missionState);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, []);
 
   return (
     <div>
