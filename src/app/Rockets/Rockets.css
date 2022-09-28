@@ -16,8 +16,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
+
 .pict {
   min-width: 100%;
   min-height: 100%;
