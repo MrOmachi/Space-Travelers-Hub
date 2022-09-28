@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,12 +16,10 @@ const Rocket = (props) => {
       <div className="infor">
         <h2>{rocket.rocket_name}</h2>
         <p>
-          <span className="reservRock">
-          {rocket.reserved ? 'Reserved' : null }
-          </span>
+          {rocket.reserved && <span className="reservRock">Reserved</span> }
           {rocket.description}
         </p>
-        {<button type="button" className="rocketBtn" onClick={() => dispatch(reserveRocket(rocket.rocket_id))}>{rocket.reserved ? 'Cancel reservation' : 'Reserve Rockets'}</button>}
+        <Button variant={rocket.reserved ? 'outline-primary' : 'primary'} type="button" className="rocketBtn" onClick={() => dispatch(reserveRocket(rocket.rocket_id))}>{rocket.reserved ? 'Cancel reservation' : 'Reserve Rockets'}</Button>
       </div>
     </div>
   );

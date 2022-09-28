@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './mission.css';
 
 const Membership = (props) => {
   const { reserved } = props;
   if (reserved) {
     return (
-      <span className="membershipActive">
+      <span className="memberA">
         Active Member
       </span>
     );
   }
   return (
-    <span>Not A MEMBER</span>
+    <span className="notMem">Not A MEMBER</span>
   );
 };
 

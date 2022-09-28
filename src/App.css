@@ -2,13 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+}
+
+h1 {
+  padding-left: 10px;
 }
 
 .NavBar {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .NavBar > img {
@@ -18,4 +25,40 @@
 .Links {
   display: flex;
   gap: 20px;
+}
+
+*.active {
+  background-color: #0290ff;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  text-decoration: underline 2px solid white !important;
+  text-underline-offset: 5px;
+}
+
+*.active:hover {
+  color: black;
+}
+
+.homel,
+.missionsl,
+.myProfilel {
+  text-decoration: none;
+  padding: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
