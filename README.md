@@ -15,9 +15,9 @@
 - ReactJs, Redux toolkit, React-Bootstrap
 - Git, GitHub, Git workflow, Jest
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live link](https://resplendent-granita-2cc67f.netlify.app/Rockets)
+[Live link](https://resplendent-granita-2cc67f.netlify.app/)
 
 
 ## Getting Started
