@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import MyProfile from '../MyProfile/MyProfile';
 import Missions from '../Missions/Missions';
 import Rockets from '../Rockets/Rockets';
-import { store } from '../store';
+import { store } from '../../Redux/store';
 
 describe('Rocket components', () => {
   it('Render component', () => {
