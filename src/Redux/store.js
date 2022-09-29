@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import rocketReducer from '../Redux/Rockets/rocketreducers';
-import missionsReducer, { fetchMissions } from '../Redux/mission/missionSlice';
+import rocketReducer from './Rockets/rocketreducers';
+import missionsReducer, { fetchMissions } from './mission/missionSlice';
 
 // eslint-disable-next-line import/prefer-default-export
 export const store = configureStore({
