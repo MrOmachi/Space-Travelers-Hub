@@ -1,0 +1,29 @@
+.profile {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.rockets,
+.missions {
+  width: 50%;
+}
+
+.myProfileInfo {
+  border: 1px solid;
+}
+
+.myprofeach {
+  height: 50px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.myprofeach p {
+  margin: 0;
+  padding-left: 5px;
+}

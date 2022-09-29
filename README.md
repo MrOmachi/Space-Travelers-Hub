@@ -1,46 +1,88 @@
-# Getting Started with Create React App and Redux
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Traveler's Hub
+![logo](https://user-images.githubusercontent.com/84629565/192157992-0711df2a-c851-4bbc-9f05-9c17c261490d.jpg)
 
-## Available Scripts
+![App view](./src/resources/desktop.png)
 
-In the project directory, you can run:
+>This web application provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
+> This is an educational project aimed at understanding Understand how to use medium-fidelity wireframes to create a UI, Follow text written requirements (e.g., user stories), Use GitFlow to work with other developers in a team, Solve simple git conflicts, Write clear, professional, and respectful review comments for other team members, Explain "why" a change is requested when giving a code review, Perform a code review for a team member.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- JavaScript
+- ReactJs, Redux toolkit, React-Bootstrap
+- Git, GitHub, Git workflow, Jest
 
-### `npm test`
+## Live Demo 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live link](https://resplendent-granita-2cc67f.netlify.app/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### To have a copy of this project running on your local machine, follow these commands:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone this repo to your local machine
+  -  `git clone https://github.com/MrOmachi/Space-Travelers-Hub.git`
+  - Open the folder "Space-Travelers-Hub and run `npm install` to install all necesary scripts,
+  - Run from your termminal, `npm start` to open the project in your browser.
 
-### `npm run eject`
+**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [NodeJS](https://nodejs.org/en/docs/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Text Editor(VScode Recommended)](https://code.visualstudio.com/)
 
-## Learn More
+> Visual Studio Code is a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
+
+**When the above commands aresuccessfully run, your browser should open on `localhost:3000`, if not, open your browser and load `127.0.0.1:3000` to see your default template loaded**
+
+### Run tests
+
+> `npm test` :smile:
+
+### Deployment
+
+
+## Authors
+
+👤 _Omachi John_
+
+- GitHub: [@githubhandle](https://github.com/MrOmachi)
+- Twitter: [@twitterhandle](https://twitter.com/Mr_Omachi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/john-omachi-00446210b)
+
+👤 _Federico Luna V._
+
+- GitHub: [@Flunavgt](https://github.com/Flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

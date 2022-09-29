@@ -1,0 +1,43 @@
+.each {
+  display: flex;
+  width: 90%;
+  margin-inline: 5%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.each:hover {
+  box-shadow: 0 0 10px black;
+}
+
+.pictFrame {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pict {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 15px;
+}
+
+.infor {
+  width: 80%;
+  padding-left: 50px;
+}
+
+.reservRock {
+  background-color: aquamarine;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+}
+
+.rocketBtn:hover {
+  background-color: white !important;
+  color: black !important;
+}

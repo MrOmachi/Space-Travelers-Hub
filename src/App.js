@@ -1,58 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NavBar from './app/NavBar/NavBar';
+import Rockets from './app/Rockets/Rockets';
+import Missions from './app/Missions/Missions';
+import MyProfile from './app/MyProfile/MyProfile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Rockets />} />
+      <Route path="/Rockets" element={<Rockets />} />
+      <Route path="/Missions" element={<Missions />} />
+      <Route path="/MyProfile" element={<MyProfile />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

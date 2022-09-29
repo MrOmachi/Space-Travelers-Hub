@@ -1,0 +1,30 @@
+.leave {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  width: 200px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.memberA {
+  color: white;
+  background-color: rgb(28, 179, 239);
+}
+
+.memberA,
+.notMem {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.notMem {
+  background-color: darkgrey;
+  color: white;
+}
+
+.join {
+  width: 200px;
+  margin: 15px;
+}
