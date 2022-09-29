@@ -26,13 +26,10 @@
 
 - Clone this repo to your local machine
   -  `git clone https://github.com/MrOmachi/Space-Travelers-Hub.git`
-  - Open the folder "Math-magician and run `npm install` to install all necesary scripts,
+  - Open the folder "Space-Travelers-Hub and run `npm install` to install all necesary scripts,
   - Run from your termminal, `npm start` to open the project in your browser.
 
 **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -44,15 +41,6 @@ To get a local copy up and running follow these simple example steps.
 
 > Visual Studio Code is a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors.
 
-### Setup
-
-**Run from your terminal:**
-
-- `npx create-react-app ./`
-
-**cd into math-magician folder, then run from your terminal:**
-
-- `npm start`
 
 ### Usage
 
@@ -60,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-> coming soon :smile:
+> `npm test` :smile:
 
 ### Deployment
 
@@ -97,4 +85,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
